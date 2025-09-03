@@ -15,7 +15,7 @@ class UserModel {
     ) {
         const sentence = db.prepare(`
         INSERT INTO users (email, password_hash, username, bio, age, profile_image)
-        VALUES (@email, @password_hash, @username, @bio, @age, @profile_image) `
+        VALUES (@email, @password, @username, @bio, @age, @profile_image) `
         );
         const result = sentence.run(user);
         return result.lastInsertRowid as number;
