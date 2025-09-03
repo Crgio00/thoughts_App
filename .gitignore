@@ -1,0 +1,21 @@
+# Node.js
+node_modules/
+npm-debug.log*
+pnpm-debug.log*
+package-lock.json
+
+# TypeScript
+dist/
+build/
+*.tsbuildinfo
+
+# SQLite
+*.db
+*.db-journal
+
+# Environment variables
+.env
+
+
+# IDEs & OS
+.vscode/
